@@ -31,6 +31,6 @@ for i in range(350):
         i_array.append(created_array[i].replace('\u3000', '').replace('\n', '').replace('\xa0', ''))
         i_array.append(article_array[i].replace('\u3000', '').replace('\n', '').replace('\xa0', ''))
         print(i_array)
-    #with open(f"html/page{i+1}.html", "w") as f:
-    #    f.write(site_data.text)
+    with open(f"html/page{i+1}.html", "w") as f:
+        f.write(site_data.text)
     time.sleep(3)
